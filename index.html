@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+  </title>
+	<style>
+		body {
+			background-color: #606060;
+		};
+	</style>
+	<script>
+	function images(){
+		var out="<h3>Randomii by zoogie</h3>Scan these Mii QRs with the 3DS Mii App and rest-assurered, you will be terrified!<br>";
+		
+		for(var i=0;i<20;i++){
+			out+="<img style=\'padding-top: 10px;\' src=\'qr/qr"+i+".png\'/><font style=\'background-color: white;\'>"+i+" </font>&nbsp ";
+		}
+		document.getElementsByTagName("body")[0].innerHTML=out;
+	}
+	</script>
+</head>
+<body onload="images();">
+
+
+</body>
+
+</html>
